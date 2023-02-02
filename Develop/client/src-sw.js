@@ -27,21 +27,15 @@ warmStrategyCache({
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // TODO: Implement asset caching
-registerRoute(
-  ({ request }) => request.destination === 'image',
-    new CacheFirst({
-      cacheName: 'assets',
-      plugins: [
-        new CacheableResponsePlugin({
-          statuses: [0, 200],
-        })
-        //new ExpirationPlugin({
-          // maxEntries: 60,
-        //  maxAgeSeconds: 30 * 24 * 60 * 60,
-        //}),
-      ]
-    })
-);
+registerRoute(function(_ref2) {
+  var request = _ref2.request;
+  return request.destination === 'style' || request.destination === 'script';
+}, new CacheFirst({
+  cacheName: 'assets',
+  plugins: [new CacheableResponsePlugin({
+      statuses: [200]
+  })]
+}));
 
 //Adding Offline Fallback 
 registerRoute(new CacheFirst());

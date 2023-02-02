@@ -48,7 +48,8 @@ module.exports = () => {
       }),
       // Injects our custom service worker
       new InjectManifest({
-        swSrc: './src-sw.js',
+        // swSrc: './src-sw.js',
+        swSrc: '/src-sw.js',
         injectionPoint: 'self.__WB_MANIFEST',
         swDest: 'src-sw.js',
       }),
@@ -73,7 +74,7 @@ module.exports = () => {
                 // { targets: "defaults" }
                 ]
               ],
-              plugins: ['@babel/plugin-proposal-class-properties', '@babel/plugin-proposal-object-rest-spread',
+              plugins: ['@babel/plugin-proposal-object-rest-spread',
               '@babel/transform-runtime',]
             }
           }
