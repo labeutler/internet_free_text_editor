@@ -54,23 +54,59 @@ THEN I download my web application as an icon on my desktop
 
 WHEN I load my web application
 THEN I should have a registered service worker using workbox
+
 WHEN I register a service worker
 THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
+
 WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 ```
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+You can click on the link and be able to open JATE, the Just Another Text Editor.<br>
+Please click [here]().
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+### You will be able to open the terminal and see the Client Server folder structure.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-![alt text](assets/images/screenshot.png)
+![alt text](./Develop/client/src/images/ClientServerFolder.png)
+
+
+
+### From there, when typing into the terminal 'npm run start', the application will start up.
+
+
+![alt text](./Develop/client/src/images/RootNPM.png)
+
+
+
+
+### In this image, you can see that there are bundles along the left of the image.  You will also see that there is an HTML file, service worker file and a manifest file.  
+
+
+![alt text](./Develop/client/src/images/JSbundleWP.png)
+
+
+
+### You are able to use the text editor without errors with while using the next-gen Javascript.
+### As well as IndexedDB has immediately created a database storage when entering data into JATE.
+
+
+![alt text](./Develop/client/src/images/IndexDBstorage.png)
+
+
+
+### You will also be able to close out of JATE and your information will be saved, thanks to setting up the indexedDB.
+### When clicking on Install, you will download JATE directly to your computer, then all you will need to do is click on the following ICON in order for the app to present.
+
+
+![alt text](./Develop/client/src/images/Icon.png)
+
+
+
 
 ## Credits
 
