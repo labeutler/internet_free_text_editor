@@ -41,6 +41,3 @@ registerRoute(
     ],
   })
 );
-//Adding Offline Fallback 
-// registerRoute(new CacheFirst());
-// offlineFallback();
