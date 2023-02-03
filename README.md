@@ -65,7 +65,8 @@ THEN I should have proper build scripts for a webpack application
 ## Installation
 
 You can click on the link and be able to open JATE, the Just Another Text Editor.<br>
-Please click [here]().
+Please click [here](https://internet-free-text-editor.herokuapp.com/).<br>
+**Please be sure to 'Trust' Heroku and all the sub links.
 
 ## Usage
 
@@ -115,6 +116,8 @@ Please click [here]().
 [Babel Help](https://webpack.js.org/loaders/babel-loader/)
 
 [Cache Help](https://medium.com/animall-engineering/best-caching-strategies-progressive-web-app-pwa-c610d65b2009)
+
+My GitHub [Link](https://github.com/labeutler/internet_free_text_editor)
 
 ## License
 
